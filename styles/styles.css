@@ -1,0 +1,92 @@
+/*
+-=Color Palette=-
+Dark Grey - #5E636A
+Light Grey - #BBBCB9
+Gold - #E1AA70
+Light Blue - #9CA7BC
+*/
+
+/* Global Styles
+-----------------*/
+
+body {
+    background-color: #9ca7bc;
+}
+
+h1 , h2 {
+    color: #5e636a;
+    text-align: center;
+    background-color: #bbbcb9;
+    text-decoration: underline
+}
+
+
+p {
+    text-align: left;
+    width: 65%;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/Sunset.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  background: #5E636A;
+
+}
+
+ /* Button Styles
+-----------------*/
+.btn {
+    display: inline-block; 
+    background-color: #e1aa70;
+    color: whitesmoke;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #bbbcb9;
+  color: black;
+}
+
+
+ /* Main Content
+-----------------*/
+.content {
+  display: flex;           
+  align-items: center;     
+  gap: 20px;               
+  flex: 1; 
+}
+
+.profile {
+  width: 250px;
+  height: 250px;
+  background: url("../images/profile.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content .first {
+  font-size: 20px;
+}
+
+ /* About
+-----------------*/
+
+.about {
+  background: url(../images/Sunset.jpg) no-repeat;
+  background-size: cover;
+}
+
+.about .content-wrapper {
+  background: rgb(187 188 185 / 0.9) ;
+  width: 600px;
+}
+
