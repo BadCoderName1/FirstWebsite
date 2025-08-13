@@ -61,13 +61,13 @@ footer {
 .content {
   display: flex;           
   align-items: center;     
-  gap: 20px;               
+  gap: 90px;               
   flex: 1; 
 }
 
 .profile {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   background: url("../images/profile.png") no-repeat;
   background-size: cover;
   background-position: center;
