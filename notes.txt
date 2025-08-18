@@ -1,0 +1,24 @@
+To connect seperate java script files, do  the following:
+
+In the main js file, add the code:
+
+import "object" from "./jsfile.js";
+
+
+then in the extra js file put:
+
+export default "object";
+
+(Don't use the "" on the object)
+
+and in HTML do:
+
+<script type="module" src="jsfile.js></script>
+<script type="module" src="jsfile2.js></script>
+
+in the <head>
+
+no need to use defer or async because once set to moduler,
+they automaticly getted defered
+
+best to use with class's as a framework for objects, rather than calling objects from modules

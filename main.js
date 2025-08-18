@@ -1,21 +1,10 @@
-const buttonA = document.querySelector("#button_A");
-const headingA = document.querySelector("#heading_A");
-const result = document.querySelector("#result")
+import Album from "./Album.js";
 
-let count = 1;
+const yoursTruly = new Album(
+"Yours Truly",
+2013,
+13,
+"Pop"
+);
 
-buttonA.onclick = () => {
-  buttonA.textContent = "Try again!";
-  headingA.textContent = `${count} clicks so far`;
-  count += 1;
-};
-
-
-
-    if (count % 2 == 0){
-        result.textContent = "It's Even";
-    }
-    else {
-        result.textContent = "It's odd"
-};
-
+console.log("The album object:", yoursTruly);
