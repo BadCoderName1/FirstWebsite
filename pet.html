@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Adoption Center</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .pet { border: 2px solid #ccc; margin: 10px; padding: 15px; }
+        .available { border-color: green; }
+        .adopted { border-color: red; opacity: 0.5; }
+    </style>
+</head>
+<body>
+    <h1>Happy Paws Adoption Center</h1>
+    <div id="pet-list"></div>
+    
+    <script>
+        let pets = [
+        { name: "Garfield", type: "cat", age: 3, adopted: false },
+        { name: "Bella", type: "cat", age: 12, adopted: false},
+        { name: "Gus", type: "dog", age: 2, adopted: false},
+        { name: "Kitty", type: "cat", age: 11, adopted: false}
+        ];
+
+        function displayPet(pet) {
+            let html = `<div>Pet name is ${pet.name} ${pet.type} ${pet.age} ${pet.adopted}</div>`;
+            console.log(html)
+            return html;
+        };
+
+        function showAllPets(pets) {
+            let container = document.getElementById("pet-list")
+            for (let i = 0; i == 3; i++) {
+                container.innerHTML += displayPet(pets[i]);
+            }
+        }
+
+        
+        showAllPets(pets);
+
+
+    </script>
+</body>
+</html>
