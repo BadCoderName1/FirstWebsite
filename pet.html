@@ -23,16 +23,16 @@
 
         function displayPet(pet) {
             let html = `<div>Pet name is ${pet.name} ${pet.type} ${pet.age} ${pet.adopted}</div>`;
-            console.log(html)
+            console.log(html);
             return html;
         };
 
         function showAllPets(pets) {
-            let container = document.getElementById("pet-list")
-            for (let i = 0; i == 3; i++) {
-                container.innerHTML += displayPet(pets[i]);
+            let container = document.getElementById("pet-list");
+            for (pet of pets) {
+                container.innerHTML += displayPet(pet);
             }
-        }
+        };
 
         
         showAllPets(pets);
