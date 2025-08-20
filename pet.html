@@ -4,7 +4,7 @@
     <title>Pet Adoption Center</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
-        .pet { border: 2px solid #ccc; margin: 10px; padding: 15px; }
+        .pet { border: 20px solid #ccc; margin: 10px; padding: 15px; }
         .available { border-color: green; }
         .adopted { border-color: red; opacity: 0.5; }
     </style>
@@ -12,6 +12,8 @@
 <body>
     <h1>Happy Paws Adoption Center</h1>
     <div id="pet-list"></div>
+    
+    
     
     <script>
         let pets = [
@@ -22,7 +24,7 @@
         ];
 
         function displayPet(pet) {
-            let html = `<div>Pet name is ${pet.name} ${pet.type} ${pet.age} ${pet.adopted}</div>`;
+            let html = `<div>Pet name is ${pet.name} ${pet.type} ${pet.age} Is adopted? ${pet.adopted} <button type="button" id="${pet.name}"}">Adopt Me</button> </div>`;
             console.log(html);
             return html;
         };
@@ -33,6 +35,18 @@
                 container.innerHTML += displayPet(pet);
             }
         };
+
+        // Select button
+        const button = document.getElementById(pet.name);
+        
+
+        //Event to listen for button Click
+        btn.addEventListener("click", () => {
+            console.log("yes");
+        });
+
+        
+        
 
         
         showAllPets(pets);
